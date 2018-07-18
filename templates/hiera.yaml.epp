@@ -61,7 +61,7 @@ hierarchy:
 <% if $hr['options'] { -%>
     options:
     <%- $hr['options'].each |$key,$value| { -%>
-      <%- if $value =~ Array { -%>
+      <%- if $value == Array { -%>
       <%= $key %>: 
       <%- $value.each |$val| { -%>
         - <%= $val %>
